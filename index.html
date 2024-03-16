@@ -3,6 +3,16 @@
   <head>
   <title>Unknown</title>
   </head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+         <style>
+body {
+background-color: #171717FF;
+color: white;
+text-align: center;
+padding-top: 50px;
+} 
+         </style>
   <body>
 
   <script>
@@ -12,12 +22,5 @@ fetch("https://api.ipify.org/?format=json")
   document.body.innerHTML = `Your IP Address is ${data.ip}, Isn't it? Anyways, Thank you for your IP Address! `;
 });
 </script>
-<style>
-body {
-background-color: #171717FF;
-color: white;
-text-align: center;
-padding-top: 50px;
-} 
-</style>
+
   </body>
