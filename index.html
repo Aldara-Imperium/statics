@@ -1,10 +1,23 @@
 <!DOCTYPE html>
   <html>
   <head>
-  <title>Statics</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Unknown</title>
   </head>
   <body>
 
-  <script></script>
+  <script>
+fetch("https://api.ipify.org/?format=json")
+.then(results => results.json())
+.then(data => {
+  document.body.innerHTML = `Your IP Address is ${data.ip}, Isn't it? Anyways, Thank you for your IP Address! `;
+});
+</script>
+<style>
+body {
+background-color: #171717FF;
+color: white;
+text-align: center;
+padding-top: 50px;
+} 
+</style>
   </body>
